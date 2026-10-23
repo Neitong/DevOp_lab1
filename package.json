@@ -1,0 +1,22 @@
+{
+  "name": "Lab1",
+  "version": "1.0.0",
+  "private": "true",
+  "type": "module",
+  "packageManager": "yarn@4.12.0",
+  "scripts": {
+    "start": "node src/app.js",
+    "lint": "eslint .",
+    "test": "mocha \"src/test/**/*.test.js\"",
+    "coverage": "c8 --all --include \"src/**/*.js\" --exclude \"src/test/**\" --check-coverage --lines 80 --functions 80 --branches 80 --reporter=text --reporter=lcov mocha \"src/test/**/*.test.js\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "c8": "^12.0.0",
+    "chai": "^6.3.0",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "mocha": "^12.0.3",
+    "supertest": "^7.3.1"
+  }
+}
